@@ -1,0 +1,23 @@
+"*":
+  "exception-reporting":
+    userId: "b814a295-ccaa-99c6-6f62-d26a84302683"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    invisibles: {}
+    backUpBeforeSaving: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "travis-ci-status": {}
+  rspec:
+    save_before_run: true
+  "rubocop-auto-correct":
+    autoRun: true
+  "linter-rubocop": {}
+  linter: {}

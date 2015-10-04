@@ -1,0 +1,27 @@
+[user]
+	name = Eric Sigler
+	email = me@esigler.com
+[hub]
+  protocol = https
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+	pop = !git stash pop
+	up = "!git remote update -p; git merge --ff-only @{u}"
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	dh = diff head
+[color]
+	ui = true
+	diff = true
+	branch = true
+	status = true
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
