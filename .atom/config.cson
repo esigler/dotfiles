@@ -12,12 +12,10 @@
     invisibles: {}
     backUpBeforeSaving: true
     showInvisibles: true
-    softWrap: true
     softWrapAtPreferredLineLength: true
   "travis-ci-status": {}
   rspec:
     save_before_run: true
-  "rubocop-auto-correct":
-    autoRun: true
+  "rubocop-auto-correct": {}
   "linter-rubocop": {}
   linter: {}
