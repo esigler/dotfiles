@@ -8,6 +8,9 @@
       "atom-dark-ui"
       "atom-dark-syntax"
     ]
+    disabledPackages: [
+      "rubocop-auto-correct"
+    ]
   editor:
     invisibles: {}
     backUpBeforeSaving: true
