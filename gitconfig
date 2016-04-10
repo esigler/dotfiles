@@ -3,6 +3,7 @@
 [user]
 	name = Eric Sigler
 	email = me@esigler.com
+	signingkey = 35108A9F
 [hub]
   protocol = https
 [alias]
@@ -31,3 +32,5 @@
 	required = true
 [diff]
 	submodule = log
+[commit]
+	gpgsign = true
