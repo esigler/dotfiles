@@ -1,24 +1,24 @@
 "*":
-  "exception-reporting":
-    userId: "b814a295-ccaa-99c6-6f62-d26a84302683"
-  welcome:
-    showOnStartup: false
   core:
+    disabledPackages: [
+      "rubocop-auto-correct"
+    ]
     themes: [
       "atom-dark-ui"
       "atom-dark-syntax"
     ]
-    disabledPackages: [
-      "rubocop-auto-correct"
-    ]
   editor:
-    invisibles: {}
     backUpBeforeSaving: true
+    invisibles: {}
     showInvisibles: true
     softWrapAtPreferredLineLength: true
-  "travis-ci-status": {}
+  "exception-reporting":
+    userId: "b814a295-ccaa-99c6-6f62-d26a84302683"
+  linter: {}
+  "linter-rubocop": {}
   rspec:
     save_before_run: true
   "rubocop-auto-correct": {}
-  "linter-rubocop": {}
-  linter: {}
+  "travis-ci-status": {}
+  welcome:
+    showOnStartup: false
