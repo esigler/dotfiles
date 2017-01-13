@@ -20,3 +20,7 @@ PATH="$HOME/.rbenv/bin:$HOME/.binstubs:$PATH"
 eval "$(rbenv init -)"
 PATH="/usr/local/heroku/bin:$PATH"
 PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin/:$PATH"
+
+alias sleepsafe='sudo pmset -a darkwakes 0'
+alias sleepfast='sudo pmset -a standby 0'
+alias sleepdefault='sudo pmset -a standbydelay 0'
