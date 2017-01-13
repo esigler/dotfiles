@@ -14,10 +14,9 @@ plugins=(git github jump)
 source $ZSH/oh-my-zsh.sh
 
 HISTSIZE=25000
-EDITOR='vi'
+EDITOR='/usr/local/bin/mate -w'
 [ -f /Users/esigler/.travis/travis.sh ] && source /Users/esigler/.travis/travis.sh
 PATH="$HOME/.rbenv/bin:$HOME/.binstubs:$PATH"
 eval "$(rbenv init -)"
-eval "$(docker-machine env default)"
 PATH="/usr/local/heroku/bin:$PATH"
 PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin/:$PATH"
