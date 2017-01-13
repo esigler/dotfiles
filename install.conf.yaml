@@ -3,6 +3,7 @@
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    "~/.ssh/config": ".ssh/config"
     "~/.atom/config.cson": ".atom/config.cson"
     "~/.atom/keymap.cson": ".atom/keymap.cson"
     "~/.atom/styles.less": ".atom/styles.less"
