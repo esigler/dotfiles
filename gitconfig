@@ -3,7 +3,7 @@
 [user]
 	name = Eric Sigler
 	email = me@esigler.com
-	signingkey = 35108A9F
+	signingkey = D05F60E7
 [hub]
   protocol = https
 [alias]
