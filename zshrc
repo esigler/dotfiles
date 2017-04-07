@@ -26,3 +26,11 @@ eval "$(pyenv virtualenv-init -)"
 alias sleepsafe='sudo pmset -a darkwakes 0'
 alias sleepfast='sudo pmset -a standby 0'
 alias sleepdefault='sudo pmset -a standbydelay 0'
+
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+  source "${HOME}/.gpg-agent-info"
+  export GPG_AGENT_INFO
+  export SSH_AUTH_SOCK
+else
+  eval $(gpg-agent --daemon --enable-ssh-support)
+fi
