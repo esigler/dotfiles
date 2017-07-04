@@ -7,6 +7,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs docker_machine)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator rbenv pyenv background_jobs time)
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
+TERM="xterm-256color"
 
 EDITOR='/usr/local/bin/mate -w'
 
@@ -20,17 +21,10 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 eval "$(rbenv init -)"
 
+export PATH="/home/esigler/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 alias sleepsafe='sudo pmset -a darkwakes 0'
 alias sleepfast='sudo pmset -a standby 0'
 alias sleepdefault='sudo pmset -a standbydelay 0'
-
-if [ -f "${HOME}/.gpg-agent-info" ]; then
-  source "${HOME}/.gpg-agent-info"
-  export GPG_AGENT_INFO
-  export SSH_AUTH_SOCK
-else
-  eval $(gpg-agent --daemon --enable-ssh-support)
-fi
