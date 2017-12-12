@@ -14,6 +14,9 @@ EDITOR='/usr/local/bin/mate -w'
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 
+plugins=(zsh-completions)
+autoload -U compinit && compinit
+
 source $ZSH/oh-my-zsh.sh
 
 test -e "${HOME}/.travis/travis.sh" && source "${HOME}/.travis/travis.sh"
@@ -21,10 +24,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 eval "$(rbenv init -)"
 
-export PATH="/home/esigler/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# esigler 2017/12/12 - Disabled for now.
+# export PATH="/home/esigler/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
-alias sleepsafe='sudo pmset -a darkwakes 0'
-alias sleepfast='sudo pmset -a standby 0'
-alias sleepdefault='sudo pmset -a standbydelay 0'
+SSH_AUTH_SOCK=/Users/esigler/.gnupg/S.gpg-agent.ssh; export SSH_AUTH_SOCK;
+
+source ~/.zshrc-local
